@@ -1,6 +1,7 @@
 # Pharmaceutical Sales prediction across multiple stores
 ## Overview
-Business Need
+##Business Need
+
  We will explore the behaviour of customers in the various stores. Our goal is to check how some measures such as promos and opening of new stores affect purchasing       behavior. 
 # Features
 Id - an Id that represents a (Store, Date) duple within the test set
