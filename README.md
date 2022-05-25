@@ -3,13 +3,10 @@
 
  We will explore the behaviour of customers in the various stores. Our goal is to check how some measures such as promos and opening of new stores affect purchasing       behavior. 
 # Features
-Id - an Id that represents a (Store, Date) duple within the test set
-
-Store - a unique Id for each store
-
-Sales - the turnover for any given day (this is what you are predicting)
-
-Customers - the number of customers on a given day
+<li>Id - an Id that represents a (Store, Date) duple within the test set</li>
+<li>Store - a unique Id for each store
+<li>Sales - the turnover for any given day (this is what you are predicting)
+<li>Customers - the number of customers on a given day
 
 Open - an indicator for whether the store was open: 0 = closed, 1 = open
 
