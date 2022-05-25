@@ -2,7 +2,7 @@
 ## Overview of Business need
 
  <p>We will explore the behaviour of customers in the various stores. Our goal is to check how some measures such as promos and opening of new stores affect purchasing       behavior.</p>
-# Features
+<h2> Features</h2>
 <li>Id - an Id that represents a (Store, Date) duple within the test set</li>
 <li>Store - a unique Id for each store
 <li>Sales - the turnover for any given day (this is what you are predicting)
