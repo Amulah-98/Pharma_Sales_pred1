@@ -1,0 +1,4 @@
+python 3
+Anaconda 3
+pandas
+numpy
