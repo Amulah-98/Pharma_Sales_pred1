@@ -21,7 +21,7 @@ class ReadData():
         logger.info("Successfully read the data")
         return data
 
-class Clean:
+class Clean():
 
     def __init__(self, df):
         """initialize the cleaning class"""
