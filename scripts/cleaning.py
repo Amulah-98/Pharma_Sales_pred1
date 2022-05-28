@@ -13,7 +13,7 @@ from sklearn.pipeline import Pipeline
 from scripts.logger import logger
 
 # read and process data
-class DataPrep():
+class ReadData():
 
     # read the data
     def read_data(self, path):
@@ -155,7 +155,7 @@ class Clean:
     def outlier_correcter(self, data):
         # data = treat_null(data)
         for col in discrete + continous:
-            data[col] = data[col].clip(lower=data[col].quantile(0.10), upper=data[col].quantile(0.90))
+            data[col] = data[col].clip(lower=data[col].quantile(0.25), upper=data[col].quantile(0.75))
         return data
 
         # encoding categorical
