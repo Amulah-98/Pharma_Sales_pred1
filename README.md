@@ -1,5 +1,4 @@
-
-<a href="[default.asp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQCcHgLNDEtJ0u03fhovo1SU0xwGrJus7hQ&usqp=CAU)"><img src="rossman.gif" style="width:42px;height:42px;"></a>
+![image](https://user-images.githubusercontent.com/55177259/170966518-420b74f6-9789-422f-b321-ff4f4c48752d.png)
 
 # Pharmaceutical Sales prediction across multiple stores
 ## Overview of Business need
