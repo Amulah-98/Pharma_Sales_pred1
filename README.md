@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/55177259/170966518-420b74f6-9789-422f-b321-ff4f4c48752d.png)
+![image](https://user-images.githubusercontent.com/55177259/170966771-bd04d472-4330-462d-843a-e139dae53241.png)
+
 
 # Pharmaceutical Sales prediction across multiple stores
 ## Overview of Business need
