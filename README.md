@@ -1,3 +1,6 @@
+
+<a href="[default.asp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQCcHgLNDEtJ0u03fhovo1SU0xwGrJus7hQ&usqp=CAU)"><img src="rossman.gif" style="width:42px;height:42px;"></a>
+
 # Pharmaceutical Sales prediction across multiple stores
 ## Overview of Business need
 
