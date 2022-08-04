@@ -56,6 +56,6 @@ The repository has a number of files including python scripts, jupyter notebooks
 
 ```
 git clone https://github.com/Amulah-98/Pharma_Sales_pred1.git
-cd Pharmaceutical-Sales
+cd Pharma_Sales_pred1
 pip install -r requirements.txt
 ```
