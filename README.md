@@ -1,4 +1,5 @@
 # Rossmann Pharmaceuticals Sales Forecasting
+![image](https://user-images.githubusercontent.com/55177259/182832620-52d29344-4015-43df-a00e-ecb8b66a7e33.png)
 
 ## Overview of Business need
 
