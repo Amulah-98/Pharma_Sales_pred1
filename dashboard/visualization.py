@@ -4,38 +4,38 @@ import sys
 import pickle
 
 
-st.title("Rosmann Pharmaceutical Sales Prediction")
+st.header("Rosmann Pharmaceutical Sales Prediction")
 
 st.header("Distribution and Visualization of the pharmaceutical Data")
 
 st.subheader("Correlation Analysis")
-st.image('images/dashboard/corr.png')
+st.image('../images/corr.png')
 
 st.subheader("Analysis of storetypes on open days")
-st.image('images/dashboard/storetype.png')
+st.image('../images/storetype.png')
 
 st.subheader("State Holiday customer Analysis")
-st.image('images/dashboard/stateholiday.png')
+st.image('../images/stateholiday.png')
 
 st.subheader("Assortment Effect On Sales")
-st.image('images/dashboard/assortment.png')
+st.image('../images/assortment.png')
 
 st.subheader("Mean monthly sales")
-st.image('images/dashboard/mean_monthly_sales.png')
+st.image('../images/mean_monthly_sales.png')
 
 st.subheader("AutoCorrelation")
-st.image('images/dashboard/autocorr.png')
+st.image('../images/autocorr.png')
 
 st.subheader("Partial AutoCorrelation")
-st.image('images/dashboard/partial ac.png')
+st.image('../images/partial ac.png')
 
 st.header("Model Analysis")
 
 st.subheader("test and val loss plot")
-st.image('images/dashboard/xloss.png')
+st.image('../images/xloss.png')
 
 st.subheader("Feature Importance on model")
-st.image('images/dashboard/features.png')
+st.image('../images/features.png')
 
 st.subheader("Prediciton image - Time Series")
-st.image('images/dashboard/lstm.png')
+st.image('../images/lstm.png')
