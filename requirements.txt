@@ -2,3 +2,8 @@ python 3
 Anaconda 3
 pandas
 numpy
+sklearn
+seaborn
+pickle
+matplotlib
+mlflow

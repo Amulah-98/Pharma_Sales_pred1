@@ -39,13 +39,13 @@ def prediction(Open, DayOfWeek, Promo):
     else:
         print("Wrong Input!!!!!")
  
-    Sales = Sales
+  
  
     # Making predictions 
     prediction = ideal_model.predict( 
         [[Open, DayOfWeek, Promo]])
     
-    
+    Sales = Sales.prediction
 
     if prediction == 0:
         pred = 'Rejected'
