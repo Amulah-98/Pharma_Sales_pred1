@@ -46,6 +46,7 @@ def prediction(Open, DayOfWeek, Promo, Sales):
     # Making predictions 
     prediction = ideal_model1.predict( 
         [[Open, DayOfWeek, Promo]])
+        
     if prediction == 0:
         pred = 'Rejected'
     else:
