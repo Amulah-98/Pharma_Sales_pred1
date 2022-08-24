@@ -1,17 +1,19 @@
+from distutils.command.install_egg_info import safe_name
 import pickle
 import streamlit as st
  
 # loading the trained model
-pickle_in = open('ideal_model.pkl', 'rb') 
-ideal_model = pickle.load(pickle_in)
+pickle_in = open('ideal_model1.pkl', 'rb') 
+ideal_model1 = pickle.load(pickle_in)
  
 @st.cache()
   
 # defining the function which will make the prediction using the data which the user inputs 
-def prediction(Open, DayOfWeek, Promo):   
- 
+def prediction(Open, DayOfWeek, Promo, Sales):   
+    
+
     # Pre-processing user input    
-    if Open == "Open":
+    if Open == "Yes":
         Open = 1
     else:
         Open = 0
@@ -22,37 +24,35 @@ def prediction(Open, DayOfWeek, Promo):
         Promo = 0
 
 
-    if (DayOfWeek==1):
-        print(DayOfWeek," is Sunday")
-    elif (DayOfWeek==2):
-        print(DayOfWeek," is Monday")
-    elif (DayOfWeek==3):
-        print(DayOfWeek," is Tuesday")
-    elif (DayOfWeek==4):
-        print(DayOfWeek," is Wednesday")
-    elif (DayOfWeek==5):
-        print(DayOfWeek," is Thursday")
-    elif (DayOfWeek==6):
-        print(DayOfWeek," is Friday")
-    elif (DayOfWeek==7):
-        print(DayOfWeek," is Saturday")
+    if (DayOfWeek=='1'):
+        DayOfWeek = 1
+    elif (DayOfWeek=='2'):
+        DayOfWeek = 2
+    elif (DayOfWeek=='3'):
+        DayOfWeek = 3
+    elif (DayOfWeek=='4'):
+        DayOfWeek = 4
+    elif (DayOfWeek=='5'):
+        DayOfWeek = 5
+    elif (DayOfWeek=='6'):
+        DayOfWeek = 6
+    elif (DayOfWeek=='7'):
+        DayOfWeek = 7
     else:
         print("Wrong Input!!!!!")
- 
-  
- 
-    # Making predictions 
-    prediction = ideal_model.predict( 
-        [[Open, DayOfWeek, Promo]])
+        
     
-    Sales = Sales.prediction
 
+    # Making predictions 
+    prediction = ideal_model1.predict( 
+        [[Open, DayOfWeek, Promo]])
     if prediction == 0:
         pred = 'Rejected'
     else:
         pred = 'Approved'
     return pred
-      
+    
+    
     
   
 # this is the main function in which we define our webpage  
@@ -65,13 +65,13 @@ def main():
     # following lines create boxes in which user can enter data required to make prediction 
     Open = st.selectbox('Open',("Yes","No"))
     Promo = st.selectbox('Promo',("0","1")) 
-    DayOfWeek = st.number_input("Day Of Week") 
-    Sales = st.number_input("Total Sales")
+    DayOfWeek = st.selectbox('Day Of Week', ("1","2","3","4","5","6","7")) 
+    Sales =  'Sales'
     result =""
-      
+
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
-        result = prediction(Open, DayOfWeek, Promo) 
+        result = prediction(Open, DayOfWeek, Promo, Sales) 
         st.success('Your sales is {}'.format(result))
         print(Sales)
      
